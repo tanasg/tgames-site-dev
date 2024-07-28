@@ -1,0 +1,161 @@
+/* Existing CSS rules */
+
+.wrapper {
+    position: relative;
+    width: 420px;
+    height: 600px; /* Increased height to accommodate additional fields */
+    border: 2px solid #ff9800; /* Changed border color to orange */
+    background: #2e2e2e; /* Dark background for better contrast */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;  
+    transition: height .2s ease;
+}
+
+.wrapper.active {
+    height: 650px; /* Adjust height when active */
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    translate: -400px;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    translate: 400px;
+}
+
+.wrapper.active .form-box.register {
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+form h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ff9800; /* Changed heading color to orange */
+}
+
+form .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0; /* Adjusted margin for better spacing */
+}
+
+.input-box input {
+    width: 100%; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 152, 0, .5); /* Changed border color to a lighter orange */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ff9800; /* Changed text color to orange */
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #ff9800; /* Changed placeholder color to orange */
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+    color: #ff9800; /* Changed icon color to orange */
+} 
+
+form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #ff9800; /* Changed accent color to orange */
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    color: #ff9800; /* Changed link color to orange */
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    background: #ff9800; /* Changed button background to orange */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+form .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #ff9800; /* Changed link color to orange */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 14px;
+    color: #ff9800; /* Changed terms text color to orange */
+    margin-bottom: 15px;
+}
+
+.terms a {
+    color: #76ff03; /* Light green for terms link */
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Add new CSS rules for error messages at the end of the file */
+.error-messages {
+    margin-top: 20px;
+    color: red;
+}
+
+.error {
+    margin: 0;
+    padding: 5px 0;
+    color: red;
+}

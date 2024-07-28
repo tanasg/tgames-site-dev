@@ -1,0 +1,34 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* Set background to black */
+}
+
+.welcome-box {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h1, .welcome-box p {
+  color: black; /* Text color for contrast */
+}
+
+.welcome-box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.welcome-box button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
